@@ -10,3 +10,9 @@ Helpful links:
 - Consumer tests contain have the extension `.test.pact.js`
 - Pact files will be output to the `/pact/pacts` directory of each project
 - Before testing pact files against the local API the stub server will need to be started to mock the external API's
+
+#### Todo
+- [x] API consumer tests
+- [x] External API provider tests
+- [ ] UI consumer tests
+- [ ] API provider tests
