@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=api:* nodemon ./bin/www"
+    "start": "DEBUG=api:* nodemon ./bin/www",
+    "test:pact": "jest __tests__/ --runInBand --testRegex \"/*(.test.pact.js)\""
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -13,6 +14,12 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "@pact-foundation/pact": "^9.11.0",
+    "jest": "^26.0.1",
+    "jest-pact": "^0.5.4",
     "nodemon": "^2.0.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

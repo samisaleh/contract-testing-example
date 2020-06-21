@@ -1,0 +1,16 @@
+{
+  "name": "remote-verify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "verify-external-apis.js",
+  "scripts": {
+    "test:external": "node verify-external-apis.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.11.0",
+    "fast-glob": "^3.2.4"
+  }
+}

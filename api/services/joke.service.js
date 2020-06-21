@@ -6,8 +6,9 @@ const serviceMap = {
     'dad': getDadJoke
 }
 
-function getJokes(id, type = 'dad') {
-    return serviceMap[type](id)
+function getJokes(id, type ) {
+    const jokeService = serviceMap[type] || serviceMap.dad;
+    return jokeService(id)
 }
 
 module.exports = {

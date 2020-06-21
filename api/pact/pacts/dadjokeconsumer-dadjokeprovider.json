@@ -1,0 +1,57 @@
+{
+  "consumer": {
+    "name": "DadJokeConsumer"
+  },
+  "provider": {
+    "name": "DadJokeProvider"
+  },
+  "interactions": [
+    {
+      "description": "a request for a dad joke usrcaMuszd",
+      "providerState": "I have the default dad joke",
+      "request": {
+        "method": "GET",
+        "path": "/j/usrcaMuszd",
+        "headers": {
+          "accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "id": "usrcaMuszd",
+          "joke": "What's the worst thing about ancient history class? The teachers tend to Babylon.",
+          "status": 200
+        }
+      }
+    },
+    {
+      "description": "a request for a dad joke hyPmOZLBIBd",
+      "providerState": "I have the specified chuck joke",
+      "request": {
+        "method": "GET",
+        "path": "/j/hyPmOZLBIBd",
+        "headers": {
+          "accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "id": "hyPmOZLBIBd",
+          "joke": "I used to work for a soft drink can crusher. It was soda pressing.",
+          "status": 200
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

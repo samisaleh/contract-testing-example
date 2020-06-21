@@ -12,9 +12,10 @@ const instance = axios.create({
 
 async function getDadJoke(id = 'usrcaMuszd') {
     const { data } = await instance.get('/j/' + id);
-    return formatJoke(data.joke, baseURL)
+    return formatJoke(data.id, data.joke, baseURL)
 }
 
 module.exports = {
+    instance,
     getDadJoke
 }
